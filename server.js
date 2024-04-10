@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.route('/').get((req, res) => {
-
+res.render('views/pug/index');
 });
 
 const PORT = process.env.PORT || 3000;
