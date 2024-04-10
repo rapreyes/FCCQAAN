@@ -7,6 +7,7 @@ const session = require("express-session");
 const passport = require("passport");
 
 const app = express();
+
 app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: true,
